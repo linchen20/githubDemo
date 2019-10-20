@@ -26,6 +26,6 @@ public class DIYViewAnimationActivity extends AppCompatActivity {
         ViewAnimationManager viewAnimationManager = new ViewAnimationManager();
         viewAnimationManager.moveTo(0,0);
         viewAnimationManager.cubicTo(100,600,900,1000,200,1200);
-        viewAnimationManager.startAnimation(2000,view);
+//        viewAnimationManager.startAnimation(2000,view);
     }
 }

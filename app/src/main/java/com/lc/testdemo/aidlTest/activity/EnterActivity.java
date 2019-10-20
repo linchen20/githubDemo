@@ -24,12 +24,13 @@ import java.util.List;
 import static android.content.pm.PackageManager.MATCH_DEFAULT_ONLY;
 
 /**
+ *
  * Created by Administrator on 2019/3/3.
  */
 
 public class EnterActivity extends AppCompatActivity {
 
-    private static final String TAG = "EnterActivity ==>";
+    private static final String TAG = "EnterActivity ==> ssssss";
     private List<Item> itemList = Collections.synchronizedList(new ArrayList<Item>());
 
     private RecyclerView rvEnterActivity;
