@@ -24,6 +24,7 @@ public class FragmentActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment);
 
+        // asdfasdf
        FragmentTransaction fragmentTransaction =  getSupportFragmentManager().beginTransaction();
 
        itemFragment = new ItemFragment();
