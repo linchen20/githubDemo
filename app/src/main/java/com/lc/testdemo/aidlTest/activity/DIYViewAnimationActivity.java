@@ -9,6 +9,7 @@ import com.lc.diyviewanimation.ViewAnimationManager;
 import com.lc.testdemo.R;
 
 /**
+ * 000
  * Created by Administrator on 2019/3/3.
  */
 
@@ -25,7 +26,7 @@ public class DIYViewAnimationActivity extends AppCompatActivity {
     public void anim(View view){
         ViewAnimationManager viewAnimationManager = new ViewAnimationManager();
         viewAnimationManager.moveTo(0,0);
-        viewAnimationManager.cubicTo(100,600,900,1000,200,1200);
+//        viewAnimationManager.cubicTo(100,600,900,1000,200,1200);
 //        viewAnimationManager.startAnimation(2000,view);
     }
 }
