@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<Button
+		android:text="button"
+		android:onClick="backToTop"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<TextView
+		android:layout_width="match_parent"
+		android:hint="defaultgj word"
+		android:imeOptions="actionSearch"
+		android:textSize="20dp"
+		android:singleLine="true"
+		android:layout_height="wrap_content"/>
+	<RadioGroup
+		android:id="@+id/rgChange"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<RadioButton
+			android:id="@+id/GridDecoration2"
+			android:layout_width="wrap_content"
+			android:text="GridDecoration2"
+			android:layout_height="wrap_content"/>
+		<RadioButton
+			android:id="@+id/StudyGridItemDecoration"
+			android:layout_width="wrap_content"
+			android:text="StudyGridItemDecoration"
+			android:layout_height="wrap_content"/>
+		<RadioButton
+			android:id="@+id/ListenGridItemDecoration"
+			android:layout_width="wrap_content"
+			android:text="ListenGridItemDecoration"
+			android:layout_height="wrap_content"/>
+		<RadioButton
+			android:id="@+id/GridDecorationB"
+			android:layout_width="wrap_content"
+			android:text="GridDecorationB"
+			android:layout_height="wrap_content"/>
+	</RadioGroup>
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rvGrid"
+		android:paddingLeft="15dp"
+		android:paddingRight="15dp"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</android.support.v7.widget.RecyclerView>
+</LinearLayout>

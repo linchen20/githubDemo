@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.lc.testdemo.MainActivity">
+
+	<com.lc.testdemo.slide.MyScrollview
+		android:layout_width="match_parent"
+		android:background="#ff0000"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:background="#0000ff"
+				android:text="textview"
+				android:gravity="center"
+				android:layout_height="200dp"/>
+			<com.lc.testdemo.slide.MyListView
+				android:id="@+id/lv"
+				android:background="#00ffff"
+				android:visibility="visible"
+				android:layout_width="100dp"
+				android:layout_height="200dp" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:background="#ff00ff"
+				android:text="textview"
+				android:gravity="center"
+				android:layout_height="200dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:background="#00ffff"
+				android:text="textview"
+				android:gravity="center"
+				android:layout_height="200dp"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:background="#888888"
+				android:text="textview"
+				android:gravity="center"
+				android:layout_height="200dp"/>
+		</LinearLayout>
+	</com.lc.testdemo.slide.MyScrollview>
+
+</LinearLayout>

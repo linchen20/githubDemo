@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.lc.testdemo.MainActivity">
+
+	<com.lc.testdemo.TestLayout
+		android:id="@+id/testLayout"
+		android:layout_width="200dp"
+		android:background="#ff0000"
+		android:orientation="vertical"
+		android:layout_height="200dp">
+
+	</com.lc.testdemo.TestLayout>
+	<com.lc.testdemo.TouchTestLayout
+		android:id="@+id/tl"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<com.lc.testdemo.TestTextView
+			android:id="@+id/touchView"
+			android:background="#0000fe"
+			android:layout_width="@dimen/dp200"
+			android:layout_height="200dp"/>
+	</com.lc.testdemo.TouchTestLayout>
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rv"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+	</android.support.v7.widget.RecyclerView>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:onClick="test"
+		android:text="升级"/>
+	<TextView
+		android:id="@+id/tv"
+		android:textSize="18sp"
+		android:gravity="center"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<ProgressBar
+		android:visibility="gone"
+		android:layout_width="10dp"
+		android:layout_height="50dp"
+		android:layout_gravity="center_horizontal"
+		android:indeterminate="false"
+		android:indeterminateOnly="false"
+		android:progressDrawable="@drawable/progress_vertical_material"
+		android:progress="50"
+		/>
+	<com.lc.testdemo.ProgressView
+		android:id="@+id/progressView"
+		android:layout_width="10dp"
+		android:layout_gravity="center_horizontal"
+		android:visibility="gone"
+		android:progress="50"
+		android:indeterminate="false"
+		android:indeterminateOnly="false"
+		android:progressDrawable="@drawable/progress_vertical_material"
+		android:layout_height="250dp"/>
+	<com.lc.testdemo.ProgressGroup
+		android:id="@+id/pg"
+		android:layout_gravity="center_horizontal"
+		android:paddingTop="20px"
+		android:background="#b8bdcc"
+		android:layout_width="200dp"
+		android:layout_height="400dp">
+
+	</com.lc.testdemo.ProgressGroup>
+
+</LinearLayout>

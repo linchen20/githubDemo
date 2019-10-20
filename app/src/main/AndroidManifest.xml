@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.lc.testdemo">
+
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity android:name=".aidlTest.AIDLActivity">
+			<intent-filter>
+				<action android:name="ssss"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".aidlTest.messenger4CS.MessengerActivity">
+			<intent-filter>
+				<action android:name="ACTION_MESSENGER"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".aidlTest.activity.GridRecycleViewActivity">
+			<intent-filter>
+				<action android:name="ACTION_GRID"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".aidlTest.activity.DIYViewAnimationActivity">
+			<intent-filter>
+				<action android:name="ACTION_DIY_ANIMATION"/>
+
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".aidlTest.activity.EnterActivity">
+		</activity>
+
+		<service
+			android:name=".aidlTest.BackgroundService"
+			android:process=":LCprocess"/>
+		<service
+			android:name=".aidlTest.messenger4CS.MessengerService"
+			android:process=":remote"/>
+
+		<activity android:name=".aidlTest.activity.FragmentActivity">
+
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>
