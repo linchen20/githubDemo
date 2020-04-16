@@ -7,7 +7,7 @@ package com.lc.diyviewanimation;
 public class PathPoint {
 
 
-
+    int x;
     public static final int PATH_TYPE_MOVE = 1;
     public static final int PATH_TYPE_LINE = 2;
     public static final int PATH_TYPE_CUBIC = 3;
